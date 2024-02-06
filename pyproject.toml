@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "dragala"
+version = "0.0.1"
+
+description = "dragala - Imagine an AI assistant that speaks Python, taking your natural language requests and turning them into instant, executable scripts. That's the power of dragala, an open-source command-line tool designed to supercharge your productivity and automate repetitive tasks."
+authors = ["An Pham <ancs21.ps@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9 || ^3.10 || ^3.11 || ^3.12"
+google-generativeai = "^0.3.2"
+pyyaml = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dragala = "dragala.__main__:main"
