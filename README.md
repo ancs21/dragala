@@ -18,7 +18,7 @@ Imagine an AI assistant that speaks Python, taking your natural language request
 
 ### Configuration
 
-dragala uses `gemini-pro` model for completions. You can config API KEY by modifying `~/.dragla/config.yaml`. You can get an API key from [ai.google.dev](https://ai.google.dev/).
+dragala uses `gemini-pro` model for completions. You can config API KEY by modifying `~/.dragla/config.yaml` or run the first time it asks you to input. You can get an API key from [ai.google.dev](https://ai.google.dev/).
 
 ### License
 
