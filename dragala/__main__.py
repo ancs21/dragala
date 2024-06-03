@@ -12,6 +12,12 @@ def dragala(prompt: str):
     try:
         response, script = llm_client.get_script(prompt)
         if script:
+            # print script in debug mode
+            print("Script generated:")
+            print("---" * 20)
+            print(script)
+            print("---" * 20)
+
             with redirect_stdout(io.StringIO()) as f:
                 exec(script, globals())
             output = f.getvalue()

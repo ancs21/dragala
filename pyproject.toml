@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dragala"
-version = "0.0.1"
+version = "0.1.0"
 
 description = "dragala - Imagine an AI assistant that speaks Python, taking your natural language requests and turning them into instant, executable scripts. That's the power of dragala, an open-source command-line tool designed to supercharge your productivity and automate repetitive tasks."
 authors = ["An Pham <ancs21.ps@gmail.com>"]

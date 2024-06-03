@@ -54,7 +54,7 @@ class LLMClient:
             "temperature": 0.9,
             "top_p": 1,
             "top_k": 1,
-            "max_output_tokens": 2048,
+            "max_output_tokens": 8192,
         }
         self.safety_settings = [
             {
@@ -76,7 +76,7 @@ class LLMClient:
         ]
         genai.configure(api_key=self.api_key)
         self.model = genai.GenerativeModel(
-            model_name="gemini-pro",
+            model_name="gemini-1.5-pro",
             generation_config=self.generation_config,
             safety_settings=self.safety_settings,
         )
